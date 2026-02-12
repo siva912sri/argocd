@@ -114,7 +114,7 @@ You have successfully created an EKS cluster with 2 nodes in AWS using eksctl. Y
 
 	# We are done with our Setup #
 	
-## Step - 4 : After your practise, delete Cluster and other resources we have used in AWS Cloud to avoid billing ##
+# Step - 4 : After your practise, delete Cluster and other resources we have used in AWS Cloud to avoid billing ##
 
 	```
 	eksctl delete cluster --name siva-cluster4 --region ap-south-1
@@ -229,9 +229,6 @@ kubectl logs podnames
 
 #deleted all the resources create in cluster
 kubectl delete all --all
-
-
-
 
 
 ## Step - 4 : After your practise, delete Cluster and other resources we have used in AWS Cloud to avoid billing ##
