@@ -170,32 +170,30 @@ kubectl get pods
 
 	NAME                                READY   STATUS    RESTARTS   AGE
 
-#To check the pod is Running in worker node
+# To check the pod is Running in worker node
 kubectl get pods -o wide
 
-# to check the services
+# To check the services
 kubectl get svc
 
 	NAME            TYPE           CLUSTER-IP      EXTERNAL-IP 
 
-# to check the deployment created
+# To check the deployment created
 kubectl get deployment
 
 		NAME               READY   UP-TO-DATE   AVAILABLE   AGE
 		bingo-deployment   2/2     2            2           5m41s
 
 
-#Execute the k8s manifest.yml 
+# Execute the k8s manifest.yml 
 kubectl apply -f manifest.yml
 
 Via LoadBalancer url we can access our applications
 
 
-im connecting to kubeclt - cli and connect o EKS cluster master
+I am connecting to kubeclt - cli and connect o EKS cluster master
 
-
-
-#delete pod in tesign to selfhealing testing on crash
+# Delete pod in tesign to selfhealing testing on crash
 kubectl delete pod   podname
 kubectl delete pods --all
 
@@ -214,24 +212,23 @@ kubectl scale deployment bingo-deployment --replicas=4
 
  upon increasing of pods the VM ec2 type and resources starts upgrading .
 
-#To check the pod is Running in worker node
+# To check the pod is Running in worker node
 kubectl get pods -o wide
 
 
 
-#revert back to intail state 
+# Revert back to intail state 
 kubectl scale deployment bingo-deployment --replicas=2
 
-
-#logs runtime of podname
+# logs runtime of podname
 
 kubectl logs podnames
 
-#deleted all the resources create in cluster
+# Deleted all the resources create in cluster
 kubectl delete all --all
 
 
-## Step - 4 : After your practise, delete Cluster and other resources we have used in AWS Cloud to avoid billing ##
+# Step - 5 : After your practise, delete Cluster and other resources we have used in AWS Cloud to avoid billing #
 
 	```
 eksctl delete cluster --name siva-cluster4 --region ap-south-1
