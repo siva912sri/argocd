@@ -205,7 +205,7 @@ check the EC2 instacnevm created for worker nodes -t2 micro -
 
 	NAME                                READY   STATUS    RESTARTS   AGE
 
-# scale the pods with cli without editing .yml file
+# Scale the pods with cli without editing .yml file
 kubectl scale deployment bingo-deployment --replicas=4
  
  check now
